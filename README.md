@@ -72,15 +72,15 @@ python main.py
 
 ### Main Menu
 
-![Galaxy Strike Main Menu](screenshots/main-menu.png)
+![Galaxy Strike Main Menu](screenshots/main-menu.png.png)
 
 ### Gameplay
 
-![Galaxy Strike Gameplay](screenshots/gameplay.png)
+![Galaxy Strike Gameplay](screenshots/gameplay.png.png)
 
 ### High Scores
 
-![Galaxy Strike High Scores](screenshots/high-scores.png)
+![Galaxy Strike High Scores](screenshots/high-scores.png.png)
 
 ## Saved Data
 
