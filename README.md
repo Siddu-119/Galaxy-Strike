@@ -70,15 +70,15 @@ python main.py
 
 ## Screenshots
 
-### Main Menu
+### MAIN MENU
 
 ![Galaxy Strike Main Menu](screenshots/main-menu.png.png)
 
-### Gameplay
+### GAMEPLAY
 
 ![Galaxy Strike Gameplay](screenshots/gameplay.png.png)
 
-### Pilot Record
+### PILOT RECORD
 
 ![Galaxy Strike High Scores](screenshots/high-scores.png.png)
 
