@@ -1,3 +1,4 @@
+
 # Galaxy Strike
 
 Galaxy Strike is a fast-paced, single-player space shooter built with Python and Pygame. Pilot a customizable ship through a ten-sector campaign, survive escalating enemy formations, collect upgrades, and take on three multi-phase bosses.
@@ -20,12 +21,12 @@ The game draws its ships, effects, backgrounds, and interface procedurally and s
 - Python 3.13 (developed and tested with Python 3.13.9).
 - Pygame 2.6.1.
 
-## Installation and launch
+## Installation and Launch
 
 Clone the repository and enter its folder:
 
 ```shell
-git clone <repository-url>
+git clone https://github.com/Siddu-119/Galaxy-Strike.git
 cd Galaxy-Strike
 ```
 
@@ -45,7 +46,7 @@ python3.13 -m venv .venv
 source .venv/bin/activate
 ```
 
-Install the project's Python dependencies and start the game:
+Install dependencies and start the game:
 
 ```shell
 python -m pip install --upgrade pip
@@ -56,9 +57,9 @@ python main.py
 ## Controls
 
 | Input | Action |
-| --- | --- |
-| W / A / S / D or arrow keys | Move the ship; navigate the campaign map |
-| Hold Space | Fire (also selects or continues on menus) |
+|---|---|
+| W / A / S / D or arrow keys | Move the ship |
+| Hold Space | Fire |
 | Q | Switch to the next unlocked weapon |
 | Enter | Select, launch, or continue |
 | Escape | Pause, resume, or go back |
@@ -66,55 +67,60 @@ python main.py
 | N | Return to the main menu while paused or after a run |
 | M | Toggle music |
 | Mouse | Navigate menus and interact with settings |
-| Touch a pickup | Collect it |
 
 ## Screenshots
 
-Screenshots are not included yet. Add captures to `docs/screenshots/` and replace these placeholders before publishing:
+### Main Menu
 
-| Main menu | Campaign gameplay |
-| --- | --- |
-| *Main menu screenshot placeholder* | *Gameplay screenshot placeholder* |
+![Galaxy Strike Main Menu](screenshots/main-menu.png)
 
-| Boss encounter | Settings |
-| --- | --- |
-| *Boss screenshot placeholder* | *Settings screenshot placeholder* |
+### Gameplay
 
-## Saved data
+![Galaxy Strike Gameplay](screenshots/gameplay.png)
 
-On first launch, the game creates `data/save.json` to store campaign progress, achievements, scores, selected ship, and local preferences. This file is personal/generated data and is intentionally excluded from version control. Delete it locally to reset progress. The default game configuration in `settings.py` remains part of the project.
+### High Scores
 
-## Project structure
+![Galaxy Strike High Scores](screenshots/high-scores.png)
+
+## Saved Data
+
+On first launch, the game creates `data/save.json` to store campaign progress, achievements, scores, selected ship, and local preferences. This file is personal/generated data and is intentionally excluded from version control. Delete it locally to reset progress.
+
+## Project Structure
 
 ```text
 Galaxy-Strike/
-├── main.py                 # Application entry point
-├── settings.py             # Default game and display configuration
-├── requirements.txt        # Python dependencies
-├── LICENSE                 # MIT license
-├── README.md               # Setup, controls, and project documentation
-├── .gitignore              # Local environment and generated data exclusions
+├── main.py
+├── settings.py
+├── requirements.txt
+├── LICENSE
+├── README.md
+├── .gitignore
+├── screenshots/
+│   ├── main-menu.png
+│   ├── gameplay.png
+│   └── high-scores.png
 ├── data/
-│   └── save.json           # Generated locally on first launch; not committed
+│   └── save.json
 └── src/
-    ├── game.py             # Game loop, screens, progression, and HUD
-    ├── level.py            # Campaign sectors and wave scheduling
-    ├── player.py           # Player ship and movement
-    ├── enemy.py            # Enemy types and behavior
-    ├── boss.py             # Boss encounters
-    ├── bullet.py           # Player and enemy projectiles
-    ├── powerup.py          # Collectible upgrades
-    ├── particle.py         # Starfield and visual effects
-    ├── audio.py            # Procedural music and sound effects
-    ├── menu.py             # Reusable menu buttons
-    ├── settings_menu.py    # Settings interface
-    ├── save_manager.py     # Local save-file handling
+    ├── game.py
+    ├── level.py
+    ├── player.py
+    ├── enemy.py
+    ├── boss.py
+    ├── bullet.py
+    ├── powerup.py
+    ├── particle.py
+    ├── audio.py
+    ├── menu.py
+    ├── settings_menu.py
+    ├── save_manager.py
     └── __init__.py
 ```
 
-## Future improvements
+## Future Improvements
 
-- Add screenshots and a short gameplay video.
+- Add a short gameplay video.
 - Add automated tests for campaign progression, save-data handling, and core gameplay.
 - Add optional controller support and configurable key bindings.
 - Add localization and more accessibility options.
