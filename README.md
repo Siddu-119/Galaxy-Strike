@@ -78,7 +78,7 @@ python main.py
 
 ![Galaxy Strike Gameplay](screenshots/gameplay.png.png)
 
-### High Scores
+### Pilot Record
 
 ![Galaxy Strike High Scores](screenshots/high-scores.png.png)
 
